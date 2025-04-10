@@ -1,0 +1,140 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+section{
+
+    text-align: center;
+    background-image: linear-gradient(orangered, rgb(255, 176, 148));
+    padding: 5px;
+    height: 30px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  li {
+    float: left;
+
+  }
+
+  li a {
+
+    display: inline;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 50px;
+    
+    
+  }
+  
+  li:hover{
+    background-color: black;
+    transition: 0.4s;
+  }
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: fit-content;
+    padding: 0;
+    
+}
+
+.header {
+
+    background-color: #3d4080;
+    
+
+}
+
+.container {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    
+
+    gap: 20px;
+    width: 70%;
+    
+    margin: 20px;
+
+}
+
+div.container::-webkit-scrollbar{
+
+  height: 12px;  /* height of horizontal scrollbar ← You're missing this */ 
+  background-color: rgba(0, 0, 0, 0);
+
+}
+
+div.container::-webkit-scrollbar-thumb{
+  background: #d6d6d6;
+  border-radius: 25px;
+  
+}
+
+div.container::-webkit-scrollbar-thumb:active{
+  background-color: #a1a1a1;
+  transition: 0.2s;
+
+}
+
+
+
+div.container{
+
+  background-color: #8688ac;
+  border-radius: 25px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 30px;
+}
+
+div.container img{
+  padding: 0px;
+  margin: 0px;
+}
+
+.mag {
+
+  transition: 0.2s;
+  opacity: 0.7;
+
+}
+
+
+div.mag img{
+
+  height: 600px;
+
+}
+
+div.mag:hover {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0px 0px 20px 3px rgb(255, 173, 97);
+}
+
+#logonew{
+    
+    height: 60px;
+    margin-top: 20px;
+
+}
+
