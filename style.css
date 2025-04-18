@@ -4,8 +4,9 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #3d4080;
     text-align: center;
+    font-family: sans-serif;
 }
 
 
@@ -14,8 +15,17 @@ section{
     text-align: center;
     background-image: linear-gradient(orangered, rgb(255, 176, 148));
     padding: 5px;
-    height: 30px;
+    height: 20px;
+    font-size: 15px;
 
+}
+
+#simple-text{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 ul {
@@ -48,22 +58,22 @@ ul {
   }
 
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: fit-content;
-    padding: 0;
-    
+  display: flex;
+  height: 50px;
+  padding: 10px 20px;
 }
 
 .header {
 
     background-color: #3d4080;
-    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: fit-content;
 
 }
 
-.container {
+.mag-container {
     display: flex;
     justify-self: center;
     align-items: center;
@@ -76,20 +86,20 @@ ul {
 
 }
 
-div.container::-webkit-scrollbar{
+div.mag-container::-webkit-scrollbar{
 
   height: 12px;  /* height of horizontal scrollbar ← You're missing this */ 
   background-color: rgba(0, 0, 0, 0);
 
 }
 
-div.container::-webkit-scrollbar-thumb{
+div.mag-container::-webkit-scrollbar-thumb{
   background: #d6d6d6;
   border-radius: 25px;
   
 }
 
-div.container::-webkit-scrollbar-thumb:active{
+div.mag-container::-webkit-scrollbar-thumb:active{
   background-color: #a1a1a1;
   transition: 0.2s;
 
@@ -97,16 +107,16 @@ div.container::-webkit-scrollbar-thumb:active{
 
 
 
-div.container{
+div.mag-container{
 
-  background-color: #8688ac;
+  background-color: rgba(197, 144, 101, 0.35);
   border-radius: 25px;
   overflow: auto;
   white-space: nowrap;
   padding: 30px;
 }
 
-div.container img{
+div.mag-container img{
   padding: 0px;
   margin: 0px;
 }
@@ -134,7 +144,57 @@ div.mag:hover {
 #logonew{
     
     height: 60px;
-    margin-top: 20px;
+    margin: 10px;
 
+}
+
+.intro-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-self: center;
+
+    width: 70%;
+    height: 50vh;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 25px;
+
+    background-color: #5f5596;
+    color: white;
+}
+
+.contato-container form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+
+  width: 50vw;
+  height: 50vh;
+  margin: 20px;
+  border-radius: 25px;
+
+  background-color: #5f5596;
+  color: white;
+}
+
+.titulo{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+}
+.paragrafo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: white;
 }
 
