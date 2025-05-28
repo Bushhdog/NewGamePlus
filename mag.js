@@ -115,7 +115,7 @@ function irAnteriorPag() {
     const capa = urlParams.get('capa');
 
     if (capa) {
-        document.getElementById("capa").src = `../assets/imgs/rev/${capa}`;
+        document.getElementById("capa").src = `assets/imgs/rev/${capa}`;
     }
 
      if (capa == "CapaBalatro.jpg"){
@@ -130,6 +130,21 @@ function irAnteriorPag() {
         document.getElementById("myVideo").style.filter = "hue-rotate(330deg)";
     }else if (capa == "CapaTTM.png"){
         document.getElementById("myVideo").style.filter = "hue-rotate(20deg)";
+    }else {
+        throw new Error("Capa Não Encontrada.");
     }
 
+    // Carregar página da revista
+    
+    // Esta porra não está funcionando, amanhã testo direitinho
+
+    urlParams = new URLSearchParams(window.location.search);
+    const revista = urlParams.get('revista');
+
+    if (revista == "Balatro1.jpg") {
+        document.getElementById("revista1").src = `revistas/${revista}`;
+    }else{
+        throw new Error("Revista Não Encontrada.");
+
     }
+}
