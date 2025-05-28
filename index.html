@@ -29,24 +29,28 @@
                   </svg>
                 </li>
 
-                <li id="h-button">
-                  <a href="index.html" target="_blank">
-                    Home
-                  </a>
+                <li>
+                  <ul class="h-buttons">
+                    <li id="h-button">
+                      <a href="index.html" target="_blank">
+                        Home
+                      </a>
+                    </li>
+                    
+                    <li id="h-button">
+                      <a href="#vitrine-geral">
+                        Revistas
+                      </a>
+                    </li>
+                    
+                    <li id="h-button">
+                      <a href="index.html" target="_blank">
+                        Sobre
+                      </a>
+                    </li>
+                  </ul>
                 </li>
                 
-                <li id="h-button">
-                  <a href="#vitrine-geral">
-                    Revistas
-                  </a>
-                </li>
-                
-                <li id="h-button">
-                  <a href="index.html" target="_blank">
-                    Sobre
-                  </a>
-                </li>
-
                 <li id="h-uicon" onclick="mudarImagem()">
                   <a>
                     <img src="assets/imgs/icons/1144760.png" alt="User Icon">
@@ -135,7 +139,7 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista" >
-          <a id="balatro" href="revistas/revista.html?capa=CapaBalatro.jpg" target="_blank">
+          <a id="balatro" href="revista.html?capa=CapaBalatro.jpg" target="_blank">
             <img src="assets/imgs/rev/CapaBalatro.jpg" id="capa-balatro" alt="Capa">
           </a>
         </div>
@@ -152,10 +156,10 @@
         <div class="avaliacao-revista">
           <p>Avalie nossa revista!</p>
           <div class="botoes">
-            <a class="botao botao-vermelho"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" onclick="botaoVermelhoClicado()"></a>
-            <a class="botao botao-amarelo"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" onclick="botaoAmareloClicado()"></a>
-            <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
-            <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
+            <a class="botao botao-vermelho" id="botao-r1" data-rev="balatro"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho"></a>
+            <a class="botao botao-amarelo" data-rev="balatro"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo"></a>
+            <a class="botao botao-verde" data-rev="balatro"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
+            <a class="botao botao-azul" data-rev="balatro"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
           </div>
         </div>
       </div>
@@ -172,7 +176,7 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista" >
-          <a href="revistas/revista.html?capa=CapaOmori.jpg" target="_blank">
+          <a href="revista.html?capa=CapaOmori.jpg" target="_blank">
             <img src="assets/imgs/rev/CapaOmori.jpg" id="capa-omori" alt="Capa">
           </a>
         </div>
@@ -189,8 +193,8 @@
         <div class="avaliacao-revista">
           <p>Avalie nossa revista!</p>
           <div class="botoes">
-            <a class="botao botao-vermelho"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" onclick="botaoVermelhoClicado()"></a>
-            <a class="botao botao-amarelo"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" onclick="botaoAmareloClicado()"></a>
+            <a class="botao botao-vermelho" id="botao-r2" onclick="botaoClicado()"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" ></a>
+            <a class="botao botao-amarelo" onclick="botaoAmareloClicado()"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" ></a>
             <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
             <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
           </div>
@@ -209,7 +213,7 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revistas/revista.html?capa=CapaSonic.png" target="_blank">
+          <a href="revista.html?capa=CapaSonic.png" target="_blank">
             <img src="assets/imgs/rev/CapaSonic.png" id="capa-sonic" alt="Capa">
           </a>
         </div>
@@ -246,7 +250,7 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revistas/revista.html?capa=CapaGris.jpg" target="_blank">
+          <a href="revista.html?capa=CapaGris.jpg" target="_blank">
             <img src="assets/imgs/rev/CapaGris.jpg" id="capa-gris" alt="GRIS">
           </a>
         </div>
@@ -283,7 +287,7 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revistas/revista.html?capa=CapaLol.png" target="_blank">
+          <a href="revista.html?capa=CapaLol.png" target="_blank">
             <img src="assets/imgs/rev/CapaLol.png" id="capa-lol" alt="League of Legends">
           </a>
         </div>
@@ -311,6 +315,43 @@
     </div>
   </div>
 
+  <div class="elementos-rev">
+    
+    <h2 class="titulo-revista">To The Moon</h2>
+
+    <div class="corpo-revista">
+
+      <!-- LADO ESQUERDO: capa -->
+      <div class="revista-esquerda">
+        <div class="capa-revista">
+          <a href="revista.html?capa=CapaTTM.png" target="_blank">
+            <img src="assets/imgs/rev/CapaTTM.png" id="capa-ttm" alt="To the moon">
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO: descrição + avaliação -->
+      <div class="revista-direita">
+        <div class="desc-revista">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam voluptate, voluptates doloremque tenetur veritatis earum dolores omnis, officia excepturi nostrum accusamus explicabo cum, distinctio neque harum quaerat. Laboriosam, expedita?
+          </p>
+        </div>
+
+        <div class="avaliacao-revista">
+          <p>Avalie nossa revista!</p>
+          <div class="botoes">
+            <a class="botao botao-vermelho"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" onclick="botaoVermelhoClicado()"></a>
+            <a class="botao botao-amarelo"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" onclick="botaoAmareloClicado()"></a>
+            <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
+            <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 
         </div>
 
@@ -321,7 +362,7 @@
             <p>&copy; 2025 New Game+. Todos os direitos reservados.</p>
             <p>Desenvolvido por <i><b>Bushhdog</b></i></p>
         </div>
-      </div>
+    </div>
     
 </body>
 </html>

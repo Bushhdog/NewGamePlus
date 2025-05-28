@@ -38,21 +38,30 @@ body{
   min-height: 75vh;
   z-index: 0;
 }
+.h-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    margin: 0;
+}
 
 #h-button{
   color: white;
-  border: #ffffff solid 2px;
   text-decoration: none;
   padding: 10px 20px;
-  border-radius: 20px;
-  transition: background-color 0.3s;
+  border-radius: 10px;
+  border-bottom: white solid 3px;
+  transition: border-bottom 0.3s, border-radius 0.3s, border-top 0.3s;
   cursor: pointer;
 }
 
 #h-button:hover {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
+  border-radius: 10px;
+  border-bottom: #ff4500 solid 3px;
+
 }
+
 
 .header{
     display:inline-block;
@@ -127,8 +136,7 @@ body{
     background-color: #ffffff;
     border-bottom: black solid 0px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
-    min-height: 80vh;
-    max-width: 100vw;
+    max-width: 100%;
     font-family: "Eurostile";
     z-index: 2;
 }
@@ -201,6 +209,10 @@ body{
   transform: scale(1.03);
   box-shadow: 2px 5px 10px rgba(0, 90, 133, 0.7);
 }
+#capa-ttm:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 5px 10px rgba(74, 65, 116, 0.7);
+}
 
 /* Lado direito: Descrição e Avaliação */
 .revista-direita {
@@ -243,12 +255,12 @@ body{
   border: none;
   cursor: pointer;
   transition: 0.2s;
-  opacity: 40%;
+  opacity: 30%;
 
 }
-.clicked {
-  opacity: 100%;
-}
+
+.clicked{opacity: 100%;}
+
 
 .botao:hover{
     opacity: 100%;
