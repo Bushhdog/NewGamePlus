@@ -94,6 +94,30 @@ body{
     width: 7vw;
 }
 
+.bot-page{
+    background-color: #ffffff;
+    border-radius: 25px 25px 0 0;
+    align-content: center;
+    height: 8vh;
+    padding: 10px;
+    font-family: "Eurostile", sans-serif;
+    text-align: center;
+    font-size: 125%;
+    color: black;
+    z-index: 1;
+}
+
+.footer a:link {
+  color: #60955c;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: #60955c;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 /*FlipBook*/
 
 
@@ -181,7 +205,7 @@ button:focus{
 }
 
 button:hover i {
-    color: #9b5e3a;
+    color: #a2a2a2;
 }
 
 i {
