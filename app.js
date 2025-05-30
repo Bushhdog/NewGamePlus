@@ -1,12 +1,12 @@
 const icones = [
-    "assets/imgs/icons/baseIcon.png",
-    "assets/imgs/icons/balatroIcon.png",
-    "assets/imgs/icons/omoriIcon.png",
-    "assets/imgs/icons/sonicIcon.png",
-    "assets/imgs/icons/grisIcon.png",
-    "assets/imgs/icons/asheIcon.png",
-    "assets/imgs/icons/ttmIcon.png",
-    "assets/imgs/icons/tsushimaIcon.png"
+    "../assets/imgs/icons/baseIcon.png",
+    "../assets/imgs/icons/balatroIcon.png",
+    "../assets/imgs/icons/omoriIcon.png",
+    "../assets/imgs/icons/sonicIcon.png",
+    "../assets/imgs/icons/grisIcon.png",
+    "../assets/imgs/icons/asheIcon.png",
+    "../assets/imgs/icons/ttmIcon.png",
+    "../assets/imgs/icons/tsushimaIcon.png"
 ];
 
 const icone = document.getElementById("UIcon");
