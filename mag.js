@@ -110,32 +110,146 @@ function irAnteriorPag() {
 // Mudar video
     // Mudar capa
 
-    window.onload = function() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const capa = urlParams.get('capa');
+//     window.onload = function() {
+//     const urlParams = new URLSearchParams(window.location.search);
+//     const capa = urlParams.get('capa');
 
-    if (capa) {
-        document.getElementById("capa").src = `assets/imgs/rev/${capa}`;
+//     if (capa) {
+//         document.getElementById("capa").src = `assets/imgs/rev/${capa}`;
+//     }
+
+//      if (capa == "CapaBalatro.jpg"){
+//         document.getElementById("myVideo").style.filter = "hue-rotate(110deg)";
+//      }else if (capa == "CapaOmori.jpg"){
+//         document.getElementById("myVideo").style.filter = "saturate(0%)";
+//     }else if (capa == "CapaSonic.png"){
+//         document.getElementById("myVideo").style.filter = "hue-rotate(150deg) brightness(1.5)";
+//     }else if (capa == "CapaGris.jpg"){
+//         document.getElementById("myVideo").style.filter = "hue-rotate(100deg)";
+//     }else if (capa == "CapaLol.png"){
+//         document.getElementById("myVideo").style.filter = "hue-rotate(330deg)";
+//     }else if (capa == "CapaTTM.png"){
+//         document.getElementById("myVideo").style.filter = "hue-rotate(20deg)";
+//     }else {
+//         throw new Error("Capa Não Encontrada.");
+//     }
+// }
+
+    // Função para rodar o ícone
+function mudarImagem(){
+    const icon = document.querySelector("#h-uicon");
+
+    if(icon.style.transform === "rotate(0deg)"){
+        icon.style.transform = "rotate(360deg)";
+        icon.style.transition = "transform 1s";}
+        else{
+        icon.style.transform = "rotate(0deg)";}
+}
+
+    //Dados da revista
+    const revistas = {
+        //Balatro
+        balatro: {
+            capa: "CapaBalatro.jpg",
+            paginas: [
+                "balatro1.jpg", "balatro2.jpg", "balatro3.jpg", "balatro4.jpg", "balatro5.jpg", "balatro6.jpg","balatro7.jpg", "balatro8.jpg", "balatro9.jpg", "balatro10.jpg","balatro11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(110deg)",
+            }
+        },
+        //Omori
+        omori: {
+            capa: "CapaOmori.jpg",
+            paginas: [
+                "omori1.jpg", "omori2.jpg", "omori3.jpg", "omori4.jpg", "omori5.jpg", "omori6.jpg","omori7.jpg", "omori8.jpg", "omori9.jpg", "omori10.jpg","omori11.jpg"
+            ],
+            estilo: {
+                filtro: "saturate(0%)"
+            }
+        },
+        //Gris
+        gris: {
+            capa: "CapaGris.jpg",
+            paginas: [
+                "gris1.jpg", "gris2.jpg", "gris3.jpg", "gris4.jpg", "gris5.jpg", "gris6.jpg","gris7.jpg", "gris8.jpg", "gris9.jpg", "gris10.jpg","gris11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(100deg)"
+            }
+        },
+        //Sonic
+        sonic: {
+            capa: "CapaSonic.jpg",
+            paginas: [
+                "sonic1.jpg", "sonic2.jpg", "sonic3.jpg", "sonic4.jpg", "sonic5.jpg", "sonic6.jpg","sonic7.jpg", "sonic8.jpg", "sonic9.jpg", "sonic10.jpg","sonic11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(150deg) brightness(1.5)"
+            }
+        },
+        //Lol
+        lol: {
+            capa: "CapaLol.jpg",
+            paginas: [
+                "Lol1.jpg", "Lol2.jpg", "Lol3.jpg", "Lol4.jpg", "Lol5.jpg", "Lol6.jpg","Lol7.jpg", "Lol8.jpg", "Lol9.jpg", "Lol10.jpg","Lol11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(330deg)"
+            }
+        },
+        //TTM
+        ttm: {
+            capa: "CapaTTM.jpg",
+            paginas: [
+                "ttm1.jpg", "ttm2.jpg", "ttm3.jpg", "ttm4.jpg", "ttm5.jpg", "ttm6.jpg","ttm7.jpg", "ttm8.jpg", "ttm9.jpg", "ttm10.jpg","ttm11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(20deg)"
+            }
+        },
+        got: {
+            capa: "CapaGot.jpg",
+            paginas: [
+                "got1.jpg", "got2.jpg", "got3.jpg", "got4.jpg", "got5.jpg", "got6.jpg","got7.jpg", "got8.jpg", "got9.jpg", "got10.jpg","got11.jpg"
+            ],
+            estilo: {
+                filtro: "hue-rotate(120deg) saturate(1.3)"
+            }
+        }
     }
 
-     if (capa == "CapaBalatro.jpg"){
-        document.getElementById("myVideo").style.filter = "hue-rotate(110deg)";
-     }else if (capa == "CapaOmori.jpg"){
-        document.getElementById("myVideo").style.filter = "saturate(0%)";
-    }else if (capa == "CapaSonic.png"){
-        document.getElementById("myVideo").style.filter = "hue-rotate(150deg) brightness(1.5)";
-    }else if (capa == "CapaGris.jpg"){
-        document.getElementById("myVideo").style.filter = "hue-rotate(100deg)";
-    }else if (capa == "CapaLol.png"){
-        document.getElementById("myVideo").style.filter = "hue-rotate(330deg)";
-    }else if (capa == "CapaTTM.png"){
-        document.getElementById("myVideo").style.filter = "hue-rotate(20deg)";
-    }else {
-        throw new Error("Capa Não Encontrada.");
+    function carregarRevista() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const nomeRevista = urlParams.get('revista');
+
+        if (!nomeRevista || !revistas[nomeRevista]) {
+            console.error("Revista Não Encontrada.");
+            return;
+        }
+        
+        const revista = revistas[nomeRevista];
+
+        //1. Atualizar a capa
+        document.getElementById("capa").src = `revistas/Capas/${revista.capa}`;
+
+        //2. Atualizar as páginas
+        revista.paginas.forEach((pagina, index) => {
+            const paginaElement = document.getElementById(`pagina-${index + 1}`);
+            if (paginaElement) {
+                paginaElement.src = `revistas/${nomeRevista}/${pagina}`;
+            }
+        });
+        //3. Aplicar o estilo
+        document.body.style.background = revista.estilo.filtro;
+        document.getElementById("myVideo").style.filter = revista.estilo.filtro;
     }
 
-    // Carregar página da revista
+    // Executa quando a página carregar
+    window.onload = carregarRevista;
     
+
+    /*
     // Esta porra não está funcionando, amanhã testo direitinho
 
     urlParams = new URLSearchParams(window.location.search);
@@ -148,3 +262,5 @@ function irAnteriorPag() {
 
     }
 }
+
+*/

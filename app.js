@@ -1,47 +1,44 @@
-// Função para mudar a imagem
-function mudarImagem(){
-    const icon = document.querySelector("#h-uicon");
+const icones = [
+    "/assets/imgs/icons/baseIcon.png",
+    "/assets/imgs/icons/balatroIcon.png",
+    "/assets/imgs/icons/omoriIcon.png",
+    "/assets/imgs/icons/sonicIcon.png",
+    "/assets/imgs/icons/grisIcon.png",
+    "/assets/imgs/icons/asheIcon.png",
+    "/assets/imgs/icons/ttmIcon.png",
+    "/assets/imgs/icons/tsushimaIcon.png"
+];
 
-    if(icon.style.transform === "rotate(360deg)"){
-        icon.style.transform = "rotate(0deg)";
-        icon.style.transition = "transform 1s";}
-        else{
-        icon.style.transform = "rotate(360deg)";}
+const icone = document.getElementById("UIcon");
+
+//Função blabla pra funcionar lá
+function imagemRandom(){
+    const rand = Math.floor(Math.random() * icones.length);
+    const rndIcon = icones[rand];
+
+    icone.src = rndIcon;
 }
 
-// function botaoVermelhoClicado(){
-//     let botao = document.getElementById("").style.backgroundColor = "red";
-//     console.log(botao);
-// }
+// Função para rodar o icone
+function girarImagem(){
+    const icon = document.getElementById("UIcon");
 
-
-// function botaoAmareloClicado(){
-//     const botao = document.querySelector(".botao-amarelo")
-//     botao.classList.toggle("clicked")
-// }
-// function botaoVerdeClicado(){
-//     const botao = document.querySelector(".botao-verde")
-//     botao.classList.toggle("clicked")
-// }
-// function botaoAzulClicado(){
-//     const botao = document.querySelector(".botao-azul")
-//     botao.classList.toggle("clicked")
-// }
-
-//  document.querySelectorAll(".botao").forEach(botao => {
-//     botao.addEventListener("click", function(e) {
-//         e.preventDefault();
-        
-//         const revista = this.getAttribute("data-revista");
-//         document.querySelectorAll(`.botao[data-revista="${revista}"]`).forEach(b => {
-//             b.classList.remove("clicked");
-//         });
-
-//         this.classList.toggle("clicked");
-
-//     });
+    if(icon.style.transform === "rotate(0deg)"){
+        icon.style.transform = "rotate(360deg)";
+        icon.style.transition = "transform 1s";
+    }else{
+        icon.style.transform = "rotate(0deg)";
+    }
     
-// });
+}
+
+//Event Listener pra clicar no icone
+icone.addEventListener("click", imagemRandom);
+icone.addEventListener("click", girarImagem);
+
+        
+
+//Botões de avaliação
 
 const grupos = document.querySelectorAll(".botoes");
 

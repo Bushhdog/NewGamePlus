@@ -90,22 +90,43 @@ body{
     color: #ffffff;
 }
 
-#h-uicon img{
+#h-uicon{
+    display: flex;
     height: 65px;
+    width: 65px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: white solid 2px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+#h-uicon img, a{
+    height: 100px;
     cursor: pointer;
-    filter: invert(1);
 }
 
 .bot-page{
     background-color: #ffffff;
     align-content: center;
-    height: 10vh;
+    height: 8vh;
     padding: 10px;
     font-family: "Eurostile", sans-serif;
     text-align: center;
     font-size: 125%;
     color: black;
     z-index: 1;
+}
+
+.footer a:link {
+  color: #60955c;
+  background-color: transparent;
+  text-decoration: none;
+}
+.footer a:visited {
+  color: #60955c;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .top-page{
@@ -171,9 +192,13 @@ body{
 }
 
 .titulo-revista {
+  display: flex;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 250px;
   font-size: 2rem;
+  height: 70px;
   font-weight: bold;
   font-family: "Eurostile";
   color: #ff4500;
@@ -188,7 +213,7 @@ body{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Sombreado das capas */
 #capa-balatro:hover {
   transform: scale(1.03);
   box-shadow: 2px 5px 10px rgba(255, 95, 85, 0.7);
@@ -212,6 +237,10 @@ body{
 #capa-ttm:hover {
   transform: scale(1.03);
   box-shadow: 2px 5px 10px rgba(74, 65, 116, 0.7);
+}
+#capa-got:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 5px 10px rgba(206, 23, 25, 0.7);
 }
 
 /* Lado direito: Descrição e Avaliação */

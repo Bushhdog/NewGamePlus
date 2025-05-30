@@ -43,16 +43,16 @@
                     </li>
                     
                     <li id="h-button">
-                      <a href="index.html" target="_blank">
+                      <a href="sobre.html" target="_blank">
                         Sobre
                       </a>
                     </li>
                   </ul>
                 </li>
                 
-                <li id="h-uicon" onclick="mudarImagem()">
+                <li id="h-uicon" onclick="girarImagem()">
                   <a>
-                    <img src="assets/imgs/icons/1144760.png" alt="User Icon">
+                    <img src="assets/imgs/icons/baseIcon.png" id="UIcon" alt="User Icon">
                   </a>
                 </li>
 
@@ -129,7 +129,7 @@
 
         <div class="revistas">
 
-            <div class="elementos-rev">
+                <div class="elementos-rev"> <!--Balatro-->
     
     <span class="titulo-revista">BALATRO</span>
 
@@ -138,8 +138,8 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista" >
-          <a id="balatro" href="revista.html?capa=CapaBalatro.jpg&revista=Balatro1.jpg" target="_blank">
-            <img src="assets/imgs/rev/CapaBalatro.jpg" id="capa-balatro" alt="Capa">
+          <a id="balatro" href="revista.html?revista=balatro" target="_blank">
+            <img src="revistas/Capas/CapaBalatro.jpg" id="capa-balatro" alt="Capa">
           </a>
         </div>
       </div>
@@ -166,7 +166,7 @@
     </div>
   </div>
 
-              <div class="elementos-rev">
+                <div class="elementos-rev"> <!--Omori-->
     
     <h2 class="titulo-revista">OMORI</h2>
 
@@ -175,8 +175,8 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista" >
-          <a href="revista.html?capa=CapaOmori.jpg" target="_blank">
-            <img src="assets/imgs/rev/CapaOmori.jpg" id="capa-omori" alt="Capa">
+          <a href="revista.html?revista=omori" target="_blank">
+            <img src="revistas/Capas/CapaOmori.jpg" id="capa-omori" alt="Capa">
           </a>
         </div>
       </div>
@@ -203,7 +203,81 @@
     </div>
   </div>
 
-              <div class="elementos-rev">
+                <div class="elementos-rev"> <!--GoT-->
+    
+    <h2 class="titulo-revista">GHOST OF TSUSHIMA</h2>
+
+    <div class="corpo-revista">
+
+      <!-- LADO ESQUERDO: capa -->
+      <div class="revista-esquerda">
+        <div class="capa-revista" >
+          <a href="revista.html?revista=got" target="_blank">
+            <img src="revistas/Capas/CapaGOT.jpg" id="capa-got" alt="Capa">
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO: descrição + avaliação -->
+      <div class="revista-direita">
+        <div class="desc-revista">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam, esse aspernatur temporibus veritatis in deleniti quibusdam doloremque suscipit nesciunt alias delectus tenetur quidem corporis consequuntur, id quis dignissimos aperiam. Deleniti?
+          </p>
+        </div>
+
+        <div class="avaliacao-revista">
+          <p>Avalie nossa revista!</p>
+          <div class="botoes">
+            <a class="botao botao-vermelho" id="botao-r2" onclick="botaoClicado()"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" ></a>
+            <a class="botao botao-amarelo" onclick="botaoAmareloClicado()"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" ></a>
+            <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
+            <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+                <div class="elementos-rev"> <!--Gris-->
+    
+    <h2 class="titulo-revista">GRIS</h2>
+
+    <div class="corpo-revista">
+
+      <!-- LADO ESQUERDO: capa -->
+      <div class="revista-esquerda">
+        <div class="capa-revista">
+          <a href="revista.html?revista=gris" target="_blank">
+            <img src="revistas/Capas/CapaGris.jpg" id="capa-gris" alt="GRIS">
+          </a>
+        </div>
+      </div>
+
+      <!-- LADO DIREITO: descrição + avaliação -->
+      <div class="revista-direita">
+        <div class="desc-revista">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime ducimus? Eaque quasi atque itaque nulla veritatis provident natus, molestiae aliquid quam pariatur fuga unde nisi repellendus possimus dolore officia?
+          </p>
+        </div>
+
+        <div class="avaliacao-revista">
+          <p>Avalie nossa revista!</p>
+          <div class="botoes">
+            <a class="botao botao-vermelho"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" onclick="botaoVermelhoClicado()"></a>
+            <a class="botao botao-amarelo"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" onclick="botaoAmareloClicado()"></a>
+            <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
+            <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+                <div class="elementos-rev"> <!--Sonic-->
     
     <h2 class="titulo-revista">SONIC MANIA</h2>
 
@@ -212,8 +286,8 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revista.html?capa=CapaSonic.png" target="_blank">
-            <img src="assets/imgs/rev/CapaSonic.png" id="capa-sonic" alt="Capa">
+          <a href="revista.html?revista=sonic" target="_blank">
+            <img src="revistas/Capas/CapaSonic.jpg" id="capa-sonic" alt="Capa">
           </a>
         </div>
       </div>
@@ -240,17 +314,17 @@
     </div>
   </div>
 
-              <div class="elementos-rev">
+                <div class="elementos-rev"> <!--TTM-->
     
-    <h2 class="titulo-revista">GRIS</h2>
+    <h2 class="titulo-revista">TO THE MOON</h2>
 
     <div class="corpo-revista">
 
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revista.html?capa=CapaGris.jpg" target="_blank">
-            <img src="assets/imgs/rev/CapaGris.jpg" id="capa-gris" alt="GRIS">
+          <a href="revista.html?revista=ttm" target="_blank">
+            <img src="revistas/Capas/CapaTTM.jpg" id="capa-ttm" alt="To the moon">
           </a>
         </div>
       </div>
@@ -259,7 +333,7 @@
       <div class="revista-direita">
         <div class="desc-revista">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, maxime ducimus? Eaque quasi atque itaque nulla veritatis provident natus, molestiae aliquid quam pariatur fuga unde nisi repellendus possimus dolore officia?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam voluptate, voluptates doloremque tenetur veritatis earum dolores omnis, officia excepturi nostrum accusamus explicabo cum, distinctio neque harum quaerat. Laboriosam, expedita?
           </p>
         </div>
 
@@ -276,8 +350,8 @@
 
     </div>
   </div>
-
-                <div class="elementos-rev">
+  
+                <div class="elementos-rev"> <!--LoL-->
     
     <h2 class="titulo-revista">LEAGUE OF LEGENDS</h2>
 
@@ -286,8 +360,8 @@
       <!-- LADO ESQUERDO: capa -->
       <div class="revista-esquerda">
         <div class="capa-revista">
-          <a href="revista.html?capa=CapaLol.png" target="_blank">
-            <img src="assets/imgs/rev/CapaLol.png" id="capa-lol" alt="League of Legends">
+          <a href="revista.html?revista=lol" target="_blank">
+            <img src="revistas/Capas/CapaLol.jpg" id="capa-lol" alt="League of Legends">
           </a>
         </div>
       </div>
@@ -314,44 +388,6 @@
     </div>
   </div>
 
-  <div class="elementos-rev">
-    
-    <h2 class="titulo-revista">To The Moon</h2>
-
-    <div class="corpo-revista">
-
-      <!-- LADO ESQUERDO: capa -->
-      <div class="revista-esquerda">
-        <div class="capa-revista">
-          <a href="revista.html?capa=CapaTTM.png" target="_blank">
-            <img src="assets/imgs/rev/CapaTTM.png" id="capa-ttm" alt="To the moon">
-          </a>
-        </div>
-      </div>
-
-      <!-- LADO DIREITO: descrição + avaliação -->
-      <div class="revista-direita">
-        <div class="desc-revista">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ullam voluptate, voluptates doloremque tenetur veritatis earum dolores omnis, officia excepturi nostrum accusamus explicabo cum, distinctio neque harum quaerat. Laboriosam, expedita?
-          </p>
-        </div>
-
-        <div class="avaliacao-revista">
-          <p>Avalie nossa revista!</p>
-          <div class="botoes">
-            <a class="botao botao-vermelho"><img src="assets/imgs/score/vermelho.png" alt="botao vermelho" onclick="botaoVermelhoClicado()"></a>
-            <a class="botao botao-amarelo"><img src="assets/imgs/score/amarelo.png" alt="botao amarelo" onclick="botaoAmareloClicado()"></a>
-            <a class="botao botao-verde" onclick="botaoVerdeClicado()"><img src="assets/imgs/score/verde.png" alt="botao verde"></a>
-            <a class="botao botao-azul" onclick="botaoAzulClicado()"><img src="assets/imgs/score/azul.png" alt="botao azul"></a>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
         </div>
 
     </section>
@@ -359,7 +395,7 @@
     <div class="bot-page">
         <div class="footer">
             <p>&copy; 2025 New Game+. Todos os direitos reservados.</p>
-            <p>Desenvolvido por <i><b>Bushhdog</b></i></p>
+            <p>Desenvolvido por <a href="https://github.com/Bushhdog" target="_blank"><b>Bushhdog</b></a></p>
         </div>
     </div>
     
