@@ -66,9 +66,7 @@ body{
 
 .header{
     display:inline-block;
-    background-color: rgba(0, 0, 0, 0.2);
-    padding: 10px;
-    margin: 0px;
+    margin: 15px;
     z-index: 2;
 }
 .header a:link {
@@ -93,10 +91,18 @@ body{
     color: #ffffff;
 }
 
-#h-uicon img{
+#h-uicon{
+    display: flex;
     height: 65px;
+    width: 65px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#h-uicon img{
+    height: 100px;
     cursor: pointer;
-    filter: invert(1);
 }
 
 
