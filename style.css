@@ -97,9 +97,6 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    border: white solid 2px;
-    border-radius: 50%;
-    overflow: hidden;
 }
 #h-uicon img, a{
     height: 100px;

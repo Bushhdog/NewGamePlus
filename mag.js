@@ -248,19 +248,43 @@ function mudarImagem(){
     // Executa quando a página carregar
     window.onload = carregarRevista;
     
+const icones = [
+    "/assets/imgs/icons/baseIcon.png",
+    "/assets/imgs/icons/balatroIcon.png",
+    "/assets/imgs/icons/omoriIcon.png",
+    "/assets/imgs/icons/sonicIcon.png",
+    "/assets/imgs/icons/grisIcon.png",
+    "/assets/imgs/icons/asheIcon.png",
+    "/assets/imgs/icons/ttmIcon.png",
+    "/assets/imgs/icons/tsushimaIcon.png"
+];
 
-    /*
-    // Esta porra não está funcionando, amanhã testo direitinho
+const icone = document.getElementById("UIcon");
 
-    urlParams = new URLSearchParams(window.location.search);
-    const revista = urlParams.get('revista');
+//Função blabla pra funcionar lá
+function imagemRandom(){
+    const rand = Math.floor(Math.random() * icones.length);
+    const rndIcon = icones[rand];
 
-    if (revista == "Balatro1.jpg") {
-        document.getElementById("revista1").src = `revistas/${revista}`;
-    }else{
-        throw new Error("Revista Não Encontrada.");
-
-    }
+    icone.src = rndIcon;
 }
 
-*/
+// Função para rodar o icone
+function girarImagem(){
+    const icon = document.getElementById("UIcon");
+
+    if(icon.style.transform == "rotate(0deg)"){
+        icon.style.transform = "rotate(360deg)";
+        icon.style.transition = "transform 1s";
+        console.log('rodado')
+    }else{
+        icon.style.transform = "rotate(0deg)";
+        console.log('rodado novamente')
+    }
+    
+}
+
+//Event Listener pra clicar no icone
+icone.addEventListener("click", imagemRandom);
+icone.addEventListener("click", girarImagem);
+

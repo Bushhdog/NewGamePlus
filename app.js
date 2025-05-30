@@ -23,11 +23,13 @@ function imagemRandom(){
 function girarImagem(){
     const icon = document.getElementById("UIcon");
 
-    if(icon.style.transform === "rotate(0deg)"){
+    if(icon.style.transform == "rotate(0deg)"){
         icon.style.transform = "rotate(360deg)";
         icon.style.transition = "transform 1s";
+        console.log('rodado')
     }else{
         icon.style.transform = "rotate(0deg)";
+        console.log('rodado novamente')
     }
     
 }
