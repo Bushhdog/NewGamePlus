@@ -10,23 +10,18 @@ html{
 /* Fonte normal (regular) */
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtNormalRegular.eot');
-    src: url('fonts/EurostileExtNormalRegular.eot') format('embedded-opentype'),
-         url('fonts/EurostileExtNormalRegular.woff2') format('woff2'),
-         url('fonts/EurostileExtNormalRegular.woff') format('woff'),
-         url('fonts/EurostileExtNormalRegular.ttf') format('truetype'),
-         url('fonts/EurostileExtNormalRegular.svg#EurostileExtNormalRegular') format('svg');
+    src: url('fonts/EurostileExtNormalRegular.ttf');
+    src: url('fonts/EurostileExtNormalRegular.ttf') format('truetype');
+         font-weight: normal;
 }
 
 
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtBoldRegular.eot');
-    src: url('fonts/EurostileExtBoldRegular.eot') format('embedded-opentype'),
-         url('fonts/EurostileExtBoldRegular.woff2') format('woff2'),
-         url('fonts/EurostileExtBoldRegular.woff') format('woff'),
-         url('fonts/EurostileExtBoldRegular.ttf') format('truetype'),
-         url('fonts/EurostileExtBoldRegular.svg#EurostileExtBoldRegular') format('svg');
+    src: url('fonts/EurostileExtBoldRegular.ttf');
+    src: url('fonts/EurostileExtBoldRegular.ttf') format('truetype');
+         font-weight: bold;
+         
 }
 
 
@@ -198,15 +193,14 @@ body{
 
 .titulo-revista {
   display: flex;
-  text-align: center;
-  justify-content: center;
   align-items: center;
-  width: 250px;
+  text-align: left;
+  width: 200px;
   font-size: 2rem;
-  height: 70px;
   font-weight: bold;
   font-family: "Eurostile";
   color: #ff4500;
+  margin-bottom: 15px;
 }
 
 .capa-revista img{
@@ -250,7 +244,7 @@ body{
 
 /* Lado direito: Descrição e Avaliação */
 .revista-direita {
-  max-width: 10vw;
+  max-width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -261,18 +255,20 @@ body{
   font-size: 1.1rem;
   min-width: 200px;
   color: #000000;
+  text-align: left;
 }
 
 
 .avaliacao-revista {
   margin: 0 0 0 0;
-  width: 250px;
+  width: 200px;
   color: #ff4500;
   font-size: 1.4rem;
   font-weight: bold;
 }
 
 .avaliacao-revista p{margin-bottom: 10px;}
+.avaliacao-revista a{height: fit-content; width: auto;}
 
 .botoes {
   display: flex;
@@ -301,7 +297,7 @@ body{
 }
 
 #Camada_2{
-    width: 70vw;
+    width: 1000px;
 }
 
 #Camada_3{
