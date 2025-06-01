@@ -126,7 +126,7 @@ function irAnteriorPag() {
 //         document.getElementById("myVideo").style.filter = "hue-rotate(150deg) brightness(1.5)";
 //     }else if (capa == "CapaGris.jpg"){
 //         document.getElementById("myVideo").style.filter = "hue-rotate(100deg)";
-//     }else if (capa == "CapaLol.png"){
+//     }else if (capa == "Capalol.png"){
 //         document.getElementById("myVideo").style.filter = "hue-rotate(330deg)";
 //     }else if (capa == "CapaTTM.png"){
 //         document.getElementById("myVideo").style.filter = "hue-rotate(20deg)";
@@ -192,7 +192,7 @@ function mudarImagem(){
         lol: {
             capa: "CapaLol.jpg",
             paginas: [
-                "Lol1.jpg", "Lol2.jpg", "Lol3.jpg", "Lol4.jpg", "Lol5.jpg", "Lol6.jpg","Lol7.jpg", "Lol8.jpg", "Lol9.jpg", "Lol10.jpg","Lol11.jpg"
+                "lol1.jpg", "lol2.jpg", "lol3.jpg", "lol4.jpg", "lol5.jpg", "lol6.jpg","lol7.jpg", "lol8.jpg", "lol9.jpg", "lol10.jpg","lol11.jpg"
             ],
             estilo: {
                 filtro: "hue-rotate(330deg)"
@@ -209,7 +209,7 @@ function mudarImagem(){
             }
         },
         got: {
-            capa: "CapaGot.jpg",
+            capa: "CapaGOT.jpg",
             paginas: [
                 "got1.jpg", "got2.jpg", "got3.jpg", "got4.jpg", "got5.jpg", "got6.jpg","got7.jpg", "got8.jpg", "got9.jpg", "got10.jpg","got11.jpg"
             ],
