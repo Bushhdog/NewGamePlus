@@ -9,18 +9,26 @@ html{
 
 /* Fonte normal (regular) */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt Normal") url('fonts/EurostileExt-Normal-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Eurostile';
+    src: url('fonts/EurostileExtNormalRegular.eot');
+    src: url('fonts/EurostileExtNormalRegular.eot') format('embedded-opentype'),
+         url('fonts/EurostileExtNormalRegular.woff2') format('woff2'),
+         url('fonts/EurostileExtNormalRegular.woff') format('woff'),
+         url('fonts/EurostileExtNormalRegular.ttf') format('truetype'),
+         url('fonts/EurostileExtNormalRegular.svg#EurostileExtNormalRegular') format('svg');
 }
 
+
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt-Bold Regular") url('fonts/EurostileExt-Bold-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Eurostile';
+    src: url('fonts/EurostileExtBoldRegular.eot');
+    src: url('fonts/EurostileExtBoldRegular.eot') format('embedded-opentype'),
+         url('fonts/EurostileExtBoldRegular.woff2') format('woff2'),
+         url('fonts/EurostileExtBoldRegular.woff') format('woff'),
+         url('fonts/EurostileExtBoldRegular.ttf') format('truetype'),
+         url('fonts/EurostileExtBoldRegular.svg#EurostileExtBoldRegular') format('svg');
 }
+
 
 
 body{
