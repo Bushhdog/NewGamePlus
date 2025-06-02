@@ -7,21 +7,24 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Fonte normal (regular) */
+/* Fonte normal */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtNormalRegular.ttf');
-    src: url('/fonts/EurostileExtNormalRegular.ttf') format('truetype');
-         font-weight: normal;
+    src: url('/fonts/EurostileExt-Normal.woff2') format('woff2'),
+         url('/fonts/EurostileExt-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-
+/* Fonte negrito */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtBoldRegular.ttf');
-    src: url('/fonts/EurostileExtBoldRegular.ttf') format('truetype');
-         font-weight: bold;
-         
+    src: url('/fonts/EurostileExt-Bold.woff2') format('woff2'),
+         url('/fonts/EurostileExt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -87,7 +90,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     font-size: 120%;
     color: #ffffff;
 }
@@ -121,7 +124,7 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Eurostile", Arial, sans-serif;
     text-align: center;
     font-size: 125%;
     color: black;
@@ -154,7 +157,7 @@ body{
     text-align: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     font-size: 400%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     border-radius: 25px 25px 0 0;
     padding: 25px 50px;
     z-index: 3;
@@ -167,7 +170,7 @@ body{
     border-bottom: black solid 0px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     z-index: 2;
 }
 
@@ -225,7 +228,7 @@ body{
 }
 
 #desc{
-  font-family: "Eurostile", sans-serif;
+  font-family: "Eurostile", Arial, sans-serif;
   font-size: 1.1rem;
   min-width: 200px;
   color: #000000;

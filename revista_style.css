@@ -7,21 +7,24 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Fonte normal (regular) */
+/* Fonte normal */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtNormalRegular.ttf');
-    src: url('/fonts/EurostileExtNormalRegular.ttf') format('truetype');
-         font-weight: normal;
+    src: url('/fonts/EurostileExt-Normal.woff2') format('woff2'),
+         url('/fonts/EurostileExt-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-
+/* Fonte negrito */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtBoldRegular.ttf');
-    src: url('/fonts/EurostileExtBoldRegular.ttf') format('truetype');
-         font-weight: bold;
-         
+    src: url('/fonts/EurostileExt-Bold.woff2') format('woff2'),
+         url('/fonts/EurostileExt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -88,7 +91,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     font-size: 120%;
     color: #ffffff;
 }
@@ -120,7 +123,7 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Eurostile", Arial, sans-serif;
     text-align: center;
     font-size: 125%;
     color: black;
