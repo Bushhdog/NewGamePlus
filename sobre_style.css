@@ -9,17 +9,19 @@ html{
 
 /* Fonte normal (regular) */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt Normal") url('fonts/EurostileExt-Normal-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileExtNormalRegular.ttf');
+    src: url('/fonts/EurostileExtNormalRegular.ttf') format('truetype');
+         font-weight: normal;
 }
 
+
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt-Bold Regular") url('fonts/EurostileExt-Bold-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileExtBoldRegular.ttf');
+    src: url('/fonts/EurostileExtBoldRegular.ttf') format('truetype');
+         font-weight: bold;
+         
 }
 
 
@@ -211,16 +213,15 @@ body{
 }
 
 .title{
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   color: #f1f1f1;
-  width: 100%;
+  width: 200px;
+  border-radius: 0 0 20px 20px;
   color: white;
   font-size: 20px;
   padding: 20px;
   text-align: center;
+  z-index: 3;
 }
 
 #desc{
@@ -240,4 +241,36 @@ body{
 }
 #Camada_4{
     width: 3vw;
+}
+
+@media(max-width: 768px) {
+    /* Seção SOBRE */
+  .main-content {
+    grid-template-columns: 1fr;
+    padding: 10px 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .corpo-revista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .revista-direita {
+    max-width: 100%;
+  }
+
+  .title {
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #desc {
+    font-size: 1rem;
+  }
+
+  .bot-page {
+    font-size: 90%;
+  }
 }

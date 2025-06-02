@@ -10,16 +10,16 @@ html{
 /* Fonte normal (regular) */
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtNormalRegular.ttf');
-    src: url('fonts/EurostileExtNormalRegular.ttf') format('truetype');
+    src: url('/fonts/EurostileExtNormalRegular.ttf');
+    src: url('/fonts/EurostileExtNormalRegular.ttf') format('truetype');
          font-weight: normal;
 }
 
 
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtBoldRegular.ttf');
-    src: url('fonts/EurostileExtBoldRegular.ttf') format('truetype');
+    src: url('/fonts/EurostileExtBoldRegular.ttf');
+    src: url('/fonts/EurostileExtBoldRegular.ttf') format('truetype');
          font-weight: bold;
          
 }
@@ -306,4 +306,95 @@ body{
 }
 #Camada_4{
     width: 3vw;
+}
+
+
+/* TESTE DE MEDIA QUERY */
+
+@media (max-width: 768px) {
+  /* Header */
+  .header ul {
+    gap: 10px;
+    font-size: 100%;
+  }
+
+  .h-buttons {
+    gap: 15px;
+  }
+
+  #h-uicon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #h-uicon img {
+    height: 70px;
+  }
+
+  /* Vídeo de fundo */
+  #myVideo {
+    min-height: 100vh;
+    object-fit: cover;
+  }
+
+  /* Seções */
+  .transition-sect {
+    font-size: 200%;
+    padding: 15px 20px;
+  }
+
+  /* Vitrine Geral */
+  .revistas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .corpo-revista {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-revista {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .desc-revista {
+  font-family: "Eurostile", sans-serif;
+  font-size: 1.1rem;
+  max-width: 350px;
+  color: #000000;
+  text-align: center;
+}
+
+  .capa-revista img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .revista-direita {
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .avaliacao-revista {
+    width: 100%;
+  }
+
+  .botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #Camada_2{
+    width: 768px;
+}
 }
