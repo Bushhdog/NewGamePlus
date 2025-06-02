@@ -10,18 +10,20 @@ html{
 /* Fonte normal (regular) */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtNormalRegular.ttf');
-    src: url('/fonts/EurostileExtNormalRegular.ttf') format('truetype');
-         font-weight: normal;
+    src: url('EurostileExt-Normal.woff2') format('woff2'),
+        url('EurostileExt-Normal.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
-
 
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExtBoldRegular.ttf');
-    src: url('/fonts/EurostileExtBoldRegular.ttf') format('truetype');
-         font-weight: bold;
-         
+    src: url('EurostileExt-Bold.woff2') format('woff2'),
+        url('EurostileExt-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
 }
 
 
