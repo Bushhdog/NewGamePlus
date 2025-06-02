@@ -10,20 +10,16 @@ html{
 /* Fonte normal */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExt-Normal.woff2') format('woff2'),
-         url('/fonts/EurostileExt-Normal.woff') format('woff');
+    src: url('/fonts/EurostileExtended.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
     font-display: swap;
 }
 
 /* Fonte negrito */
 @font-face {
     font-family: 'Eurostile';
-    src: url('/fonts/EurostileExt-Bold.woff2') format('woff2'),
-         url('/fonts/EurostileExt-Bold.woff') format('woff');
+    src: url('/fonts/EurostileBold.woff2') format('woff2');
     font-weight: bold;
-    font-style: normal;
     font-display: swap;
 }
 
