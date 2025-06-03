@@ -209,7 +209,7 @@ body{
 .elementos-dev {
   display: flex;
   flex-direction: column; /* Título em cima */
-  gap: 10px;
+  gap: 0px;
 }
 
 .corpo-revista {
