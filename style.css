@@ -29,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #3d4080;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Eurostile", Arial, sans-serif;
 }
 
 #myVideo {
@@ -37,9 +37,10 @@ body{
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 75vh;
+  min-height: 100%;
   z-index: 0;
 }
+
 .h-buttons{
     display: flex;
     justify-content: center;
@@ -54,7 +55,7 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
   border-bottom: white solid 3px;
-  transition: border-bottom 0.3s, border-radius 0.3s, border-top 0.3s;
+  transition: border-bottom 0.3s;
   cursor: pointer;
 }
 
@@ -130,6 +131,7 @@ body{
 
 .top-page{
     display: flex;
+    font-family: 'Eurostile', arial, sans-serif;
     background-color: none;
     height: 75vh;
     justify-content: center;
