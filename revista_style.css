@@ -7,19 +7,20 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Fonte normal (regular) */
+/* Fonte normal */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExtended") url('fonts/EurostileExtended.ttf') format('truetype');
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileExtended.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
+/* Fonte negrito */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt-Bold Regular") url('fonts/EurostileExt-Bold-Regular.ttf') format('truetype');
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileBold.woff2') format('woff2');
     font-weight: bold;
-    font-style: normal;
+    font-display: swap;
 }
 
 
@@ -86,7 +87,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     font-size: 120%;
     color: #ffffff;
 }
@@ -118,7 +119,7 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Eurostile", Arial, sans-serif;
     text-align: center;
     font-size: 125%;
     color: black;
@@ -258,4 +259,22 @@ i {
 
 #p6{
     z-index: 1;
+}
+
+@media(max-width: 768px){
+      /* Botões da revista.html */
+  button i {
+    font-size: 30px;
+  }
+
+  .book {
+    width: 298px;
+    height: 420px;
+  }
+
+  .front-content img,
+  .back-content img {
+    width: 100%;
+    height: 100%;
+  }
 }

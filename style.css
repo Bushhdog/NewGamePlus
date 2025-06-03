@@ -7,21 +7,20 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Fonte normal (regular) */
+/* Fonte normal */
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtNormalRegular.ttf');
-    src: url('fonts/EurostileExtNormalRegular.ttf') format('truetype');
-         font-weight: normal;
+    src: url('/fonts/EurostileExtended.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
 }
 
-
+/* Fonte negrito */
 @font-face {
     font-family: 'Eurostile';
-    src: url('fonts/EurostileExtBoldRegular.ttf');
-    src: url('fonts/EurostileExtBoldRegular.ttf') format('truetype');
-         font-weight: bold;
-         
+    src: url('/fonts/EurostileBold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
 }
 
 
@@ -30,7 +29,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: #3d4080;
-    
+    font-family: "Eurostile", Arial, sans-serif;
 }
 
 #myVideo {
@@ -38,9 +37,10 @@ body{
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 75vh;
+  min-height: 100%;
   z-index: 0;
 }
+
 .h-buttons{
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
   border-bottom: white solid 3px;
-  transition: border-bottom 0.3s, border-radius 0.3s, border-top 0.3s;
+  transition: border-bottom 0.3s;
   cursor: pointer;
 }
 
@@ -88,7 +88,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     font-size: 120%;
     color: #ffffff;
 }
@@ -111,7 +111,7 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", sans-serif;
+    font-family: "Eurostile", Arial, sans-serif;
     text-align: center;
     font-size: 125%;
     color: black;
@@ -131,6 +131,7 @@ body{
 
 .top-page{
     display: flex;
+    font-family: 'Eurostile', arial, sans-serif;
     background-color: none;
     height: 75vh;
     justify-content: center;
@@ -144,7 +145,7 @@ body{
     text-align: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     font-size: 400%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     border-radius: 25px 25px 0 0;
     padding: 25px 50px;
     z-index: 3;
@@ -158,7 +159,7 @@ body{
     border-bottom: black solid 0px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     z-index: 2;
 }
 
@@ -198,7 +199,7 @@ body{
   width: 200px;
   font-size: 2rem;
   font-weight: bold;
-  font-family: "Eurostile";
+  font-family: "Eurostile", Arial, sans-serif;
   color: #ff4500;
   margin-bottom: 15px;
 }
@@ -251,7 +252,7 @@ body{
 }
 
 .desc-revista {
-  font-family: "Eurostile", sans-serif;
+  font-family: "Eurostile", Arial, sans-serif;
   font-size: 1.1rem;
   min-width: 200px;
   color: #000000;
@@ -306,4 +307,96 @@ body{
 }
 #Camada_4{
     width: 3vw;
+}
+
+
+/* TESTE DE MEDIA QUERY */
+
+@media (max-width: 768px) {
+  /* Header */
+  .header ul {
+    gap: 10px;
+    font-size: 100%;
+  }
+
+  .h-buttons {
+    gap: 15px;
+  }
+
+  #h-uicon {
+    width: 50px;
+    height: 50px;
+  }
+
+  #h-uicon img {
+    height: 70px;
+  }
+
+  /* Vídeo de fundo */
+  #myVideo {
+    min-height: 100vh;
+    object-fit: cover;
+  }
+
+  /* Seções */
+  .transition-sect {
+    font-size: 200%;
+    padding: 15px 20px;
+  }
+
+  /* Vitrine Geral */
+  .revistas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .corpo-revista {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-revista {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .desc-revista {
+  font-family: "Eurostile", Arial, sans-serif;
+  font-size: 1.1rem;
+  max-width: 350px;
+  color: #000000;
+  text-align: center;
+}
+
+  .capa-revista img {
+    width: 60vw;
+    height: auto;
+  }
+
+  .revista-direita {
+    text-align: center;
+    max-width: 100%;
+    font-size: 1rem;
+    gap: 10px;
+  }
+
+  .avaliacao-revista {
+    width: 100%;
+  }
+
+  .botoes {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #Camada_2{
+    width: 100vw;
+    height: auto;
+  }
 }

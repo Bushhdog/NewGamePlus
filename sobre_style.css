@@ -7,19 +7,28 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Fonte normal (regular) */
+/* Fonte normal 1 */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt Normal") url('fonts/EurostileExt-Normal-Regular.ttf') format('truetype');
+    font-family: 'EurostileExt';
+    src: url('/fonts/EuroStyleNormal.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
 }
 
+/* Fonte normal 2 */
 @font-face {
-    font-family: "Eurostile";
-    src: local("EurostileExt-Bold Regular") url('fonts/EurostileExt-Bold-Regular.ttf') format('truetype');
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileExtended.woff2') format('woff2');
     font-weight: normal;
-    font-style: normal;
+    font-display: swap;
+}
+
+/* Fonte negrito */
+@font-face {
+    font-family: 'Eurostile';
+    src: url('/fonts/EurostileBold.woff2') format('woff2');
+    font-weight: bold;
+    font-display: swap;
 }
 
 
@@ -52,7 +61,7 @@ body{
   padding: 10px 20px;
   border-radius: 10px;
   border-bottom: white solid 3px;
-  transition: border-bottom 0.3s, border-radius 0.3s, border-top 0.3s;
+  transition: border-bottom 0.3s;
   cursor: pointer;
 }
 
@@ -85,7 +94,7 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     font-size: 120%;
     color: #ffffff;
 }
@@ -108,8 +117,8 @@ body{
 }
 
 #h-uicon img, a{
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     cursor: pointer;
 }
 
@@ -119,9 +128,10 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     text-align: center;
-    font-size: 125%;
+    font-size: 100%;
     color: black;
     z-index: 1;
 }
@@ -139,11 +149,28 @@ body{
 
 .top-page{
     display: flex;
-    background-color: none;
-    height: 75vh;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    height: 50vh;
+    font-family: 'Eurostile', arial, sans-serif;
+    font-kerning: auto;
+    gap: 100px;
+    background-color: none;
+    padding: 50px 100px;
+    color: white;
     z-index: 1;
+}
+
+.top-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  gap: 20px;
+
+}
+
+.top-img img{
+  width: 20vw;
 }
 
 .transition-sect{
@@ -152,7 +179,7 @@ body{
     text-align: center;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     font-size: 400%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     border-radius: 25px 25px 0 0;
     padding: 25px 50px;
     z-index: 3;
@@ -165,7 +192,7 @@ body{
     border-bottom: black solid 0px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
     max-width: 100%;
-    font-family: "Eurostile";
+    font-family: "Eurostile", Arial, sans-serif;
     z-index: 2;
 }
 
@@ -188,13 +215,13 @@ body{
 .corpo-revista {
   display: flex;
   justify-content: space-around;
-  gap: 30px;
 }
 
 .revista-esquerda {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 240px;
 }
 
 .revista-direita {
@@ -206,38 +233,157 @@ body{
 
 .dev{
     display: block;
-    width: 100%;
+    width: 240px;
     height: auto;
+
 }
 
 .title{
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
+  background: rgba(0, 0, 0, 0.9);
   width: 100%;
+  border-radius: 0 0 20px 20px;
   color: white;
-  font-size: 20px;
-  padding: 20px;
+  font-size: 1.2rem;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
   text-align: center;
+  z-index: 3;
 }
 
 #desc{
-  font-family: "Eurostile", sans-serif;
-  font-size: 1.1rem;
+  font-family: "Eurostile", Arial, sans-serif;
+  font-size: 0.9rem;
   min-width: 200px;
   color: #000000;
 }
 
 #Camada_2{
-    width: 70vw;
+    width: 300px;
+    fill: #ffffff;
+}
+
+#CamadaPlus{
+  fill: #ff4500;
 }
 
 #Camada_3{
     fill: rgb(255, 255, 255);
     width: 110px;
 }
+
 #Camada_4{
     width: 3vw;
+}
+
+@media(max-width: 768px) {
+
+    /* Header */
+
+  .header{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 20px;
+    height: 210px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 100%;
+  }
+
+  .h-buttons {
+    gap: 15px;
+  }
+
+  #h-uicon {
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+  }
+
+  #h-uicon img{
+    height: 70px;
+    width: auto;
+  }
+
+  /* Vídeo de fundo */
+  #myVideo {
+    min-height: 100vh;
+    object-fit: cover;
+  }
+
+    /* Seção SOBRE */
+  .main-content {
+    grid-template-columns: 1fr;
+    padding: 10px 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .transition-sect{
+    text-align: center;
+    font-size: 180%;
+  }
+
+  .corpo-revista {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .revista-direita {
+    max-width: 100%;
+    
+  }
+  .revista-esquerda{
+    justify-items: center;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  #desc {
+    text-align: center;
+    font-size: 1rem;
+    max-width: 240px;
+  }
+
+  .bot-page {
+    font-size: 90%;
+  }
+
+  .top-page{
+    padding: 20px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: auto;
+    gap: 10px;
+  }
+  
+
+  .top-img img{
+    width: 200px;
+  }
+
+  .top-text {
+    max-width: 50vw;
+    gap: 10px;
+  }
+
+  .top-text p{
+    width: 200px;
+}
+
+
+  #Camada_2{
+    width: 200px;
+  }
+
+  #Camada_3{
+    width: 75px;
+  }
 }
