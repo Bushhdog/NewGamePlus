@@ -44,7 +44,7 @@ body{
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 75vh;
+  min-height: 100%;
   z-index: 0;
 }
 .h-buttons{
@@ -147,30 +147,44 @@ body{
   text-decoration: none;
 }
 
+.footer a:hover {
+  color: white;
+  background-color: #60955c;
+  transition: background-color .5s, color .5s;
+  text-decoration: none;
+}
+
 .top-page{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 50vh;
     font-family: 'Eurostile', arial, sans-serif;
-    font-kerning: auto;
-    gap: 100px;
+    gap: 20px;
     background-color: none;
-    padding: 50px 100px;
+    padding: 50px 0;
+    margin: 50px 0;
     color: white;
     z-index: 1;
 }
-
-.top-text{
-  display: flex;
-  flex-direction: column;
-  max-width: 20vw;
-  gap: 20px;
-
+.logo{
+  width: fit-content;
 }
 
-.top-img img{
-  width: 20vw;
+.top-content{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.top-content p{
+  display: flex;
+  width: 280px;
+  gap: 20px;
+}
+
+.top-content img{
+  width: 300px;
 }
 
 .transition-sect{
@@ -208,8 +222,7 @@ body{
 
 .elementos-dev {
   display: flex;
-  flex-direction: column; /* Título em cima */
-  gap: 0px;
+  flex-direction: column;
 }
 
 .corpo-revista {
@@ -239,27 +252,43 @@ body{
 }
 
 .title{
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 1);
   width: 100%;
   border-radius: 0 0 20px 20px;
   color: white;
   font-size: 1.2rem;
   padding: 20px 0;
   position: relative;
-  bottom: 0;
+  bottom: 40px;
   text-align: center;
   z-index: 3;
 }
 
 #desc{
   font-family: "Eurostile", Arial, sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
   min-width: 200px;
   color: #000000;
 }
 
+#desc a:link{
+  color: #ff4500;
+  text-decoration: none;
+}
+#desc a:visited{
+  color: #ff4500;
+  text-decoration: none;
+}
+
+#desc a:hover {
+  color: white;
+  background-color: #ff4500;
+  transition: background-color .5s, color .5s;
+  text-decoration: none;
+}
+
 #Camada_2{
-    width: 300px;
+    width: 600px;
     fill: #ffffff;
 }
 
@@ -365,25 +394,30 @@ body{
   }
   
 
-  .top-img img{
-    width: 200px;
+  .top-content{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
   }
 
-  .top-text {
-    max-width: 50vw;
-    gap: 10px;
+  .top-content p{
+    display: flex;
+    font-size: 0.8rem;
+    width: 200px;
+    height: 100px;
   }
 
-  .top-text p{
+  .top-content img{
     width: 200px;
-}
+    height: auto;
+  }
 
 
   #Camada_2{
-    width: 200px;
+    width: 90vw;
   }
 
   #Camada_3{
-    width: 75px;
+    width: 80px;
   }
 }

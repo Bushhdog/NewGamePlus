@@ -19,10 +19,19 @@ let currentLocation = 1;
 let numOfPapers = 6; // Número total de páginas
 let maxLocation = numOfPapers + 1; 
 
+var x = window.matchMedia("(max-width: 768px)");
+
 function abreLivro() {
-    book.style.transform = "translateX(50%)";
-    prevBtn.style.transform = "translateX(-270px)";
-    nextBtn.style.transform = "translateX(270px)";
+    if(x.matches){
+        book.style.transform = "translateX(50%)";
+        prevBtn.style.transform = "translateY(170px)";
+        nextBtn.style.transform = "translateY(170px)";
+    }else{
+        book.style.transform = "translateX(50%)";
+        prevBtn.style.transform = "translateX(-270px)";
+        nextBtn.style.transform = "translateX(270px)";
+    }
+
 }
 
 function fechaLivro(taNoInicio) {

@@ -111,9 +111,10 @@ body{
     align-content: center;
     height: 8vh;
     padding: 10px;
-    font-family: "Eurostile", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
     text-align: center;
-    font-size: 125%;
+    font-size: 100%;
     color: black;
     z-index: 1;
 }
@@ -126,6 +127,13 @@ body{
 .footer a:visited {
   color: #60955c;
   background-color: transparent;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+  background-color: #60955c;
+  transition: background-color .5s, color .5s;
   text-decoration: none;
 }
 
@@ -303,7 +311,7 @@ body{
 
 #Camada_3{
     fill: rgb(255, 255, 255);
-    width: 6vw;
+    width: 80px;
 }
 #Camada_4{
     width: 3vw;
@@ -313,9 +321,20 @@ body{
 /* TESTE DE MEDIA QUERY */
 
 @media (max-width: 768px) {
-  /* Header */
+ /* Header */
+
+  .header{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 20px;
+    height: 210px;
+  }
+
   .header ul {
-    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
     font-size: 100%;
   }
 
@@ -326,16 +345,22 @@ body{
   #h-uicon {
     width: 50px;
     height: 50px;
+    visibility: hidden;
   }
 
-  #h-uicon img {
+  #h-uicon img{
     height: 70px;
+    width: auto;
   }
 
   /* Vídeo de fundo */
   #myVideo {
     min-height: 100vh;
     object-fit: cover;
+  }
+
+  .top-page{
+    height: 30vh;
   }
 
   /* Seções */
@@ -396,7 +421,10 @@ body{
   }
 
   #Camada_2{
-    width: 100vw;
-    height: auto;
+    width: 95vw;
+  }
+
+  .bot-page {
+    font-size: 90%;
   }
 }

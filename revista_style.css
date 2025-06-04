@@ -36,7 +36,7 @@ body{
   right: 0;
   bottom: 0;
   min-width: 100%;
-  min-height: 75vh;
+  min-height: 100%;
   z-index: 0;
 }
 
@@ -134,6 +134,13 @@ body{
 .footer a:visited {
   color: #60955c;
   background-color: transparent;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: white;
+  background-color: #60955c;
+  transition: background-color .5s, color .5s;
   text-decoration: none;
 }
 
@@ -262,19 +269,102 @@ i {
 }
 
 @media(max-width: 768px){
+
+ /* Header */
+
+  .header{
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding: 20px;
+    height: 210px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 100%;
+  }
+
+  .h-buttons {
+    gap: 15px;
+  }
+
+  #h-uicon {
+    width: 50px;
+    height: 50px;
+    visibility: hidden;
+  }
+
+  #h-uicon img{
+    height: 70px;
+    width: auto;
+  }
+
+  /* Vídeo de fundo */
+  #myVideo {
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  /* Seções */
+  .transition-sect {
+    font-size: 200%;
+    padding: 15px 20px;
+  }
+
+  /* Vitrine Geral */
+  .revistas {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px 20px;
+    min-width: auto;
+    max-width: 100%;
+  }
+
+  .corpo-revista {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .titulo-revista {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .desc-revista {
+  font-family: "Eurostile", Arial, sans-serif;
+  font-size: 1.1rem;
+  max-width: 350px;
+  color: #000000;
+  text-align: center;
+}
+
+  #Camada_3{
+    width: 80px;
+  }
+
       /* Botões da revista.html */
   button i {
     font-size: 30px;
   }
 
   .book {
-    width: 298px;
-    height: 420px;
+    width: 197px;
+    height: 280px;
   }
 
   .front-content img,
   .back-content img {
     width: 100%;
     height: 100%;
+  }
+
+  .bot-page {
+    font-size: 90%;
   }
 }
