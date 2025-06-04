@@ -175,6 +175,7 @@ body{
 .top-content{
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 .top-content p{
