@@ -8,7 +8,7 @@ Para criação do site, foi utilizado:
 - **HTML** - para estruturação da página e organização do layout
 - **CSS** - para estilização da estrutura com flexbox e grid
 - **JavaScript** - para responsividade e interatividade dos elementos
-- 
+
 Sendo esse último usado também carregamento das revistas individualmente a partir do template ```revistas.html```
 
 ![Seção de revistas do site](/preview/revistas_preview.png)
